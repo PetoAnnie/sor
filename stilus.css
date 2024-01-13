@@ -1,0 +1,24 @@
+header{
+    grid-area: h;
+}
+article{
+    ar;
+}
+aside{
+    as;
+}
+footer{
+    f;
+}
+
+
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    'h h'
+    'ar as'
+    'f f'
+    ;
+}
