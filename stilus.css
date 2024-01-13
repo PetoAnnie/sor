@@ -1,17 +1,63 @@
+*{
+    box-sizing: border-box;
+    font-family: ariel, verdana, sans-serif;
+    font-size: 10px;
+    color: beige;
+    margin: 0px;
+    padding: 0px;
+}
+body{background-image: url(teglafal.jpg);}
+
 header{
     grid-area: h;
+    height: 300px;
+    background-image: url(beer\(1\).jpg);
+    background-size: cover;
+    
+
+}
+header>h1{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+    font-size: 32px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 30px;
+
 }
 article{
-    ar;
+    grid-area: ar;
 }
 aside{
-    as;
+    grid-area: as;
 }
 footer{
-    f;
+    grid-area: f ;
 }
+nav ul{
+    list-style-type: none;
+}
+nav li:hover{
+background-color: lightgray;
+}
+nav ul li{
+    border: 1px solid wheat;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    margin-top: 2px;
 
+}
+nav a{ 
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
 
+}
+nav a:hover{
+    color: white;
+}
 
 main{
     display: grid;
@@ -19,6 +65,55 @@ main{
     grid-template-areas:
     'h h'
     'ar as'
-    'f f'
+    'f f ' ;
+    width: 80%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(51, 51, 51)
     ;
+}
+article p{font-size: 15px;
+}
+article h3{
+    font-size: 20px;
+}
+article img{
+    width: 30%;
+    height: auto;
+    float: left;
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 10px;
+    margin-right: 40px;
+}
+article li{
+    list-style-type: square;
+    list-style-position: inside;
+}
+footer p{
+    text-align: center;
+    background-color: gray;
+    
+}
+footer{
+    height: 10%;
+}
+@media only screen and (max-width:700px) {
+    main *{
+        display: block;
+    }
+}
+table, td, th{
+    border:white 1px solid;
+    border-collapse: collapse;
+    color: white;
+}
+td, th{
+    padding: 5px;
+
+}
+tr:nth-child(even){
+    background-color: lightgray;
 }
